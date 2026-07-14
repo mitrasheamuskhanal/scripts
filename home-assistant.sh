@@ -197,7 +197,7 @@ qm set $vmid \
 --serial0 socket \
 --vga serial0
 
-
+qm set $vmid --vga std
 
 ########################################
 # Start VM
@@ -208,7 +208,7 @@ echo "Starting Home Assistant..."
 
 qm start $vmid
 
-qm set 111 --vga std
+
 echo
 echo "===================================="
 echo " Home Assistant VM Created"
